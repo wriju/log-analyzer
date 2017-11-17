@@ -1,0 +1,6 @@
+com/ef/Parser.class
+com/ef/filesystem/FileUploadService.class
+com/ef/database/DatabaseCommons.class
+com/ef/time/TimeService.class
+com/ef/database/DatabaseService.class
+com/ef/database/SqlQueries.class

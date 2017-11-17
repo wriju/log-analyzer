@@ -1,0 +1,5 @@
+com/ef/database/SanityTest.class
+com/ef/database/DatabaseCommonsTest.class
+com/ef/database/BaseTest.class
+com/ef/time/TimeServiceTest.class
+com/ef/database/DatabaseServiceTest.class
