@@ -19,7 +19,8 @@ import java.util.ArrayList;
  */
 public class DatabaseCommons {
 	
-	public static final String CONNECTION_STRING = "jdbc:mysql://localhost:3306/";
+	public static final String CONNECTION_STRING = "jdbc:mysql://localhost:3306";
+	public static final String CONNECTION_FLAGS = "useSSL=false";
 	public static final String USER = "admin_user";
 	public static final String PASS = "admin_pass";
 	
@@ -38,7 +39,9 @@ public class DatabaseCommons {
 		Connection conn = null;
 		
 		try {
-			conn = DriverManager.getConnection(DatabaseCommons.CONNECTION_STRING + DatabaseCommons.DB, DatabaseCommons.USER, DatabaseCommons.PASS);
+			String connection = String.format("%s/%s?%s", CONNECTION_STRING, DB, 
+					CONNECTION_FLAGS);
+			conn = DriverManager.getConnection(connection, USER, PASS);
 			conn.setAutoCommit(true);
 		}
 		catch (Exception e) {
