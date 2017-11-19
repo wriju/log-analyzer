@@ -15,6 +15,7 @@ This is a tool to analyze a server access log file. It can:
 	- running on localhost port 3306
 	- compatible with [MySQL Connector/J 5.1.44 JDBC driver](https://dev.mysql.com/downloads/connector/j/)
 * Maven 3.3.9 installed
+* Java JDK 1.8
 
 
 
